@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: ticketing/auth
-          imagePullPolicy: Never
+          image: ticketing-dev/auth
 ---
 apiVersion: v1
 kind: Service

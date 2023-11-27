@@ -1,10 +1,12 @@
 apiVersion: skaffold/v4beta8
 kind: Config
 metadata:
-  name: ticketing
+  name: ticketing-dev
 build:
+  local:
+    push: false
   artifacts:
-    - image: ticketing/auth
+    - image: ticketing-dev/auth
       context: auth
       docker:
         dockerfile: Dockerfile
